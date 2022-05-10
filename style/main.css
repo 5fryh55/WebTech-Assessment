@@ -26,18 +26,26 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.expo_title h1:hover{
+    color: rgb(38, 164, 38);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
 .expo_date{
-    display: block;
+    display: inline;
     justify-self: center;
-    align-items: center;  
+    align-items: center; 
 }
 
 .expo_date h3{
-    margin:10px;
+    margin: 0.5vh;
     text-align: center;
     font-size: 10vh;
     color: rgb(38, 164, 38);
     font-weight: 100;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }  
 
@@ -61,6 +69,8 @@ body{
 
 .menu ul li a:hover{
     color: rgb(38, 164, 38);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .welcome_title{
@@ -92,7 +102,14 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+#home_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
 .overlay_wrapper{
+    display: flex;
     position: relative;
     justify-content: space-evenly;
     width: 25%;
@@ -144,7 +161,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 500px;
     margin: auto;
 }
 .pro_txt{
@@ -185,9 +202,19 @@ body{
     width: 50vw;
 }
 
+#email{
+    width:50vw;
+}
+
 #textbox{
     height: 20vh;
     width: 50vw;
+}
+
+#box{
+    height: 500px;
+    background-color: blue;
+    
 }
 
 
@@ -199,4 +226,23 @@ body{
     .expo_date h3{
         font-size: 5vh;
     }
+
+    
+.menu{
+    padding: 5%;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu ul li a{
+    height: 3vh;
+    
+    font-size: 3vh;
+    
+}
+
 }
