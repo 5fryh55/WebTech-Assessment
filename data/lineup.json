@@ -1,0 +1,38 @@
+[
+    {
+        "day": 29,
+        "name": "Bob",
+        "room": "Main Hall",
+        "event": "WebDev"
+    },
+    {
+        "day": 29,
+        "name": "Jane",
+        "room": "Main Hall",
+        "event": "AppDev"        
+    },
+    {
+        "day": 30,
+        "name": "Mitch",
+        "room": "Main Hall",
+        "event": "SocialMedia"
+    },
+    {
+        "day": 30,
+        "name": "Darren",
+        "room": "Seminar 1",
+        "event": "Business"
+    },
+    { 
+        "day": 31,
+        "name": "Alice",
+        "room": "Seminar 2",
+        "event": "Hack-a-thon"
+    },
+    {
+        "day": 31,
+        "name": "Emily",
+        "room": "Seminar 3",
+        "event": "Start-up"
+    }
+]

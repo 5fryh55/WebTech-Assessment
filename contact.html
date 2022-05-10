@@ -26,14 +26,17 @@
     <div class="welcome_title"><h2>Need to get in touch?</h2></div>
 
 
-    <div class="form_wrapper">
+    <div id="form_wrapper">
         <form id ="contact_form">
             <label for="first_name">First Name:</label><br>
             <input type="text" id="first_name" name="first_name"><br>
+            <div id="FNError"><p></p></div>
             <label for="surname">Surname:</label><br>
             <input type="text" id="surname" name="surname"><br>
+            <div id="SNError"><p></p></div>
             <label for="email">E-mail:</label><br>
             <input type="email" id="email" name="email"><br>
+            <div id="EmailError"><p></p></div>
 
             <label for="category">What is your query about?</label><br>
             <select id="category"  name="category"><br>
@@ -43,12 +46,15 @@
                 <option value="access">Venue access</option>
                 <option value="other">Other</option>
             </select><br>
+            <div id="CatError"><p></p></div>
             <label for="textbox">Anything else that may help us to help you:</label><br>
             <textarea id="textbox" name="textbox" rows="20" cols="100">Enter your message here...</textarea></br>
+            <div id="TxtError"><p></p></div>
             <button id="submit_btn">Submit</button>
         </form>
+        
     </div>
 
-    <script src="scripts/main.js"></script> 
+    <script src="./scripts/contact.js"></script> 
 </body>
 </html>

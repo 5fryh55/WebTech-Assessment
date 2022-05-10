@@ -1,30 +1,14 @@
-document.getElementById("contact_form").addEventListener("submit", e=>{
-    
-    let inputFirstName = document.forms["contact_form"]["first_name"].value;
-    let inputSurname = document.forms["contact_form"]["surname"].value;
-    let inputEmail = document.forms["contact_form"]["email"].value;
-    let inputCategory = document.forms["contact_form"]["catergory"].value;
-    let inputText = document.forms["contact_form"]["textbox"].value;
+document.getElementById("btn").addEventListener("click", e=>{
 
-    if (inputFirstName.trim() == ""){
-        alert("Required field.")
-    }
+    fetch("data/lineup.json")
+    .then(response=> response.json())
+    .then(lineups=>{
+        let output = ""
 
-    if (inputSurname.trim() == ""){
-        alert("Required field.")
-    }
+        lineups.forEach(act => {
+            output += `<p>${act.day} ${act.name} ${act.room} ${act.event}</p>`;
+        });
 
-    if (inputEmail.trim() == ""){
-        alert("Required field.")
-    }
-    
-    if (inputCategory.trim() == ""){
-        alert("Required field.")
-    }
-
-    if (inputText.trim() == ""){
-        alert("Required field.")
-    }
+        document.getElementById("result").innerHTML = output;
+    });
 });
-
-
